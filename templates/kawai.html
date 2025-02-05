@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Paradise</title>
+<style>
+    body {
+        background-image:url("bluebg.jpg");
+        background-repeat:no-repeat;
+       background-size:1000px 900px;
+       background-attachment:fixed;
+       background-size:cover;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.Kawai {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #000;
+
+}
+
+.banner-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+
+}
+
+.banner-text h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.banner-text p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    margin-left: 190px;
+    color:#d6eaf8;
+    font-style:italic;
+}
+
+nav {
+    background-color: #addbeb;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 20px 15px;
+    border-left: 5px solid #19bfda;
+    padding: 3px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #430f5a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+.row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1 1 300px;
+    padding: 15px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #d7dbdd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.art {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.art:hover {
+    transform: scale(1.1);
+    transition: 0.15s ease-in-out;
+}
+
+.container {
+    padding: 20px;
+    color: black;
+    font-size: 14px;
+}
+
+.container h2 {
+    font-size: 24px;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: lightblue;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #e39ad0;
+}
+
+        footer {
+            background-color: #e8e8f8;
+            padding: 20px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-column {
+            flex: 1 1 200px;
+            min-width: 200px;
+        }
+
+        .about-column h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .about-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-column ul li {
+            margin-bottom: 8px;
+        }
+
+        .about-column ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .about-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 10px;
+        }
+
+        .contact-section {
+            line-height: 1.6;
+        }
+
+
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+  img {
+    width: 40%;
+    height: auto;
+    margin-right: 10px;
+   }
+ marquee{
+    background-color:#ebdef0;
+    padding:10px;
+    }
+</style>
+</head>
+<body>
+<nav>
+        <ul>
+            <li><a href="  ">Home</a></li>
+            <li><a href="path3">Registration</a></li>
+            <li><a href="path1">Login</a></li>
+            <li><a href="cnt">Contact</a></li>
+            <li ><a href="about">About Us</a></li>
+        </ul>
+    </nav>
+    <header class="Kawai">
+        <img src="static/bg.jpg" alt="Banner Image" class="banner-image">
+        <div class="banner-text">
+            <h1>Kawaii Paradise</h1>
+            <p >Your Happy Place for Kawaii Treasures....</p>
+        </div>
+    </header>
+    <h4 style="color:black"><b><marquee behavior="" direction="left">"🌈 Brighten Your Day with Our Kawaii Treasures! 🌈"</marquee></b></h4>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img class="art" src="static/notekawai.webp" alt="Kawaii Notebook">
+                <div class="container">
+                    <h2>Kawaii Notebook</h2>
+                    <p>Perfect kawaii journal notebooks for school girls. Suitable for note-taking, journaling, and learning. Nice back-to-school gifts.</p>
+                    <button ><a href="path13">Shop Now</a></button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="art" src="static/deskk.webp" alt="Cute Decors">
+                <div class="container">
+                    <h2>Cute Decors</h2>
+                    <p>Pounce on your tasks with our adorable Stationery Set! Perfect for students and office workers looking to add a dash of whimsy to their desk.</p>
+                    <button ><a href="path13">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="art" src="static/toys.webp" alt="Plush Toy Dolls">
+                <div class="container">
+                    <h2>Plush Toy Dolls</h2>
+                    <p>Discover our collection of adorable plush toys: soft, huggable, and perfect for adding charm to your space or gifting to someone special.</p>
+                    <button ><a href="path13">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="art" src="static/setmemo.webp" alt="Stationery">
+                <div class="container">
+                    <h2>Stationery</h2>
+                    <p>Supplies Set with Notebook, Pencil Pouch, Click Pens, and Cartoon Stickers.</p>
+                    <button ><a href="path13">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="art" src="static/craft.png" alt="Art and Craft Supplies">
+                <div class="container">
+                    <h2>Art and Craft Supplies</h2>
+                    <p>Unleash your creativity with our delightful art and craft supplies – perfect for crafters!</p>
+                    <button ><a href="path13">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="art" src="static/bags.jpg" alt="Bags and Pouches">
+                <div class="container">
+                    <h2>Bags and Pouches</h2>
+                    <p>Carry your essentials in style with our charming collection of bags and pouches!</p>
+                    <button ><a href="path13">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+
+<footer>
+        <div class="about-container">
+
+
+            <div class="about-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="#">Reviews ⭐</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Kawaii News Blog</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                </ul>
+            </div>
+
+            <div class="about-column contact-section">
+                <h3>Contact Us</h3>
+                <p>Have questions or need help with an order? Please contact us using our contact form, and a member of the team will be happy to help.</p>
+                <a href="cnt">CONTACT US</a>
+            </div>
+
+            <div class="about-column">
+                <h3>Join Us</h3>
+                <p>Join over 100K on Instagram and follow us @thekawaiiParadise</p>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="https://pin.it/40jTPM48D">Pinterest</a>
+                    <a href="#">🎶</a>
+                    <a href="https://www.instagram.com/nandana__as?igsh=cDVvYzdnaHFlejFi">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-bottom">
+            © 2025 The Kawaii Paradise. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

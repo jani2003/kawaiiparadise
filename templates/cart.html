@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color:#bb8fce;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        font-family:TImes new roman;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    }
+        .card {
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+        }
+
+        .form-control {
+            border-radius: 0.5rem;
+            padding: 10px;
+        }
+        .btn-green {
+            background-color: #5b2c6f;
+            color: white; /* White text */
+            border-radius: 0.5rem;
+            padding: 10px 20px;
+            border: none; /* Remove border */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-green:hover {
+            background-color: #9822c8;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #5b2c6f;
+            padding: 15px 20px;
+            color: white;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .f1 {
+            color: white;
+        }
+        .logo .icon {
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #c9580c;
+        }
+        footer {
+            background-color:#5b2c6f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <span class="f1">Kawaii Paradise</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="back">Home</a></li>
+            <li><a href="http://127.0.0.1:8000/ga">Products</a></li>
+            <li><a href="http://127.0.0.1:8000/about">About Us</a></li>
+            <li><a href="http://127.0.0.1:8000/staff">Our Staff</a></li>
+            <li><a href="http://127.0.0.1:8000/path21">My Account</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="vh-1">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-8 col-md-6 col-lg-5 col-xl-4">
+                <div class="card shadow-2-strong">
+                    <div class="card-body p-5 text-center">
+                        <h3 class="mb-5">Add Quantity</h3>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="name3" placeholder="How many you need?" required>
+                            </div>
+                            <button type="submit" class="btn btn-green">Add to cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 The Kawaii Paradise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

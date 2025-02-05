@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+
+        .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #033d0d;
+    padding: 10px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size:40px;
+    font-weight: bold;
+}
+
+.f1{
+    color:white;
+}
+
+.logo .icon {
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+nav{
+    background-color: #033d0d;
+   }
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+padding: 0;
+}
+
+nav li {
+margin: 35px 50px;
+padding: 5px;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+nav a:hover {
+color: #c9580c;
+}
+
+body{
+    background-color: aliceblue;
+
+}
+
+
+
+.row
+				{
+				margin-top:20px;
+				display:flex;
+				justify-content:center;
+				}
+
+			.column
+				{
+				flex:20px;
+				padding:15px;
+				}
+
+			.card
+				{
+                margin-top: 40px;
+				background-color:rgba(166, 233, 175, 0.61);
+				border:1px solid rgb(9, 61, 16);
+				border-radius:8px;
+				box-shadow:0 4px 8px rgba(0,0,0,0.2);
+				overflow: hidden;
+				}
+
+			img
+				{
+				width:100%;
+				height:200px;
+				border-radius:8px 8px 0 0;
+				object-fit:cover;
+				}
+
+			.container
+				{
+				padding:10px;
+				}
+
+			.name
+				{
+                text-align: center;
+				margin:0;
+				color:rgb(6, 15, 6);
+				font-size:20px;
+				}
+
+			.name1
+				{
+				font-size:15px;
+				}
+
+			.title
+				{
+				margin:2px 0;
+				font-size:10px;
+				}
+
+			.button {
+			border: none;
+			outline: 0;
+			display: inline-block;
+			padding: 8px;
+			color: rgb(140, 228, 162);
+			background-color: #033d0d;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			}
+
+			.button:hover {
+			background-color: #13a81a;
+			}
+
+
+
+
+			.c4{
+
+				height:300px;
+			    display: flex;
+			   flex-direction:row;
+				justify-content:space-evenly;
+				align-items: center;
+				margin-left: 50px;
+				margin-right: 50px;
+			}
+			.one,.two,.three{
+				width: 300px;
+				height: 200px;
+
+				font-size:20px;
+				text-align: center;
+				padding: 5px;
+				color:white;
+			}
+            footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #033d0d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top:100px;
+    font-size:30px;
+}
+
+
+
+        h2 {
+            text-align: center;
+            color: #033d0d;
+            font-size:40px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #49976a;
+            color:black;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #559c4ca9;
+        }
+
+        .a1{
+        color: #033d0d;
+        text-align:center;
+        margin-top:60px;
+        }
+
+
+
+
+
+
+        .banner {
+  position: relative;
+  background: url('static/c.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:70px;
+}
+
+.banner-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 80px;
+  border-radius: 8px;
+  font-size:40px;
+}
+
+.banner .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #49976a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.banner .btn:hover {
+  background:#559c4ca9;
+}
+
+        .food-container {
+  text-align: center;
+  padding:20px;
+}
+
+.e4 {
+  margin-bottom: 20px;
+  font-size:60px;
+}
+
+.food-options {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.food-item {
+  text-align: center;
+  width: 120px;
+}
+
+.food-item img {
+  width: 100px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top:50px;
+}
+
+.food-item p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+}
+
+
+           /* CSS */
+.cool-drink-banner {
+  position: relative;
+  margin-top:250px;
+  background-image: url("static/g.jpg");
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(5, 4, 4);
+  text-align: center;
+  overflow: hidden;
+  background-repeat:no-repeat;
+}
+
+.drink-image {
+  position: absolute;
+
+  bottom: 0;
+  right: 10%;
+  height: 300px;
+  transform: rotate(-10deg);
+}
+
+.banner-content h1 {
+  font-size:60px;
+  color:white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content p {
+  margin: 10px 0;
+  color:white;
+  font-size: 40px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background: #49976a;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background:#559c4ca9;
+  color: white;
+  transform: scale(1.1);
+}
+        .text-black{
+        color:white;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <header class="navbar">
+        <div class="logo">
+            <span class="icon">🍴</span>
+            <span class="f1">IDROS</span>
+        </div>
+
+ <nav>
+    <ul>
+
+
+        <li><a href="back">Home</a></li>
+        <li><a href="ga">Menu</a></li>
+        <li><a href="about">Aboutus</a></li>
+        <li><a href="staff">Ourstaff</a></li>
+        <li><a href="http://127.0.0.1:8000/">Logout</a></li>
+</div>
+    </ul>
+  </nav>
+ </header>
+
+
+<!--marquee-->
+
+  <h2 style="margin-top: 10px;"><marquee behavior="scroll" direction="left" scrollamount="6">WELCOME TO IDROS  Food is always a good idea. WELCOME TO IDROS </marquee></h2>
+
+  <h3 style="color: #033d0d; margin-top: 30px;font-size:25px;">"Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories. It's about sharing. It's about honesty. It's about identity."<br>- Louise Fresco</h3>
+
+
+ <!--second banner-->
+
+ <header class="banner">
+    <div class="banner-text">
+      <h1>Welcome to IDROS</h1>
+        <h2 align="center" class="text-black">Welcome {{name}}!!!!</h2>
+      <p>Savor the taste of freshly made meals</p>
+      <a href="path13" class="btn">Explore Our Menu</a>
+    </div>
+  </header>
+
+
+ <!--what's on ur mind-->
+
+<div class="food-container">
+    <h2 class="e4">What's on your mind?</h2>
+    <div class="food-options">
+      <div class="food-item">
+        <img src="static/1.jpg" alt="Pizza">
+          <p><a href="path13">Pizza </a></p>
+      </div>
+      <div class="food-item">
+        <img src="static/18.webp" alt="Cakes">
+        <p><a href="path13">Cakes</a></p>
+      </div>
+      <div class="food-item">
+        <img src="static/19.jpg" alt="Rolls">
+        <p><a href="path13">Rolls</a></p>
+      </div>
+      <div class="food-item">
+        <img src="static/9.jpg" alt="Noodles">
+        <p><a href="path13">Noodles</a></p>
+      </div>
+      <div class="food-item">
+        <img src="static/24.jpg" alt="Momos">
+        <p><a href="path13">Momos</a></p>
+      </div>
+      <div class="food-item">
+        <img src="static/26.jpg" alt="Pure Veg">
+        <p><a href="path13">Chicken</a></p>
+      </div>
+    </div>
+  </div>
+
+   <!-- cool drink -->
+<div class="cool-drink-banner">
+    <div class="banner-content">
+      <h1>Refresh Your Day!</h1>
+      <p>Cool off with our summer special drinks.</p>
+      <a href="path13" class="cta-button">Order Now</a>
+    </div>
+  </div>
+
+
+
+
+<!--footer-->
+
+
+<footer>
+
+<div class="c4">
+    <div class="one">
+        <h1>Address</h1>
+        <p>Street:  49 Kogil Street
+
+            City:Trivandrum
+
+            State/province/area:Kerala
+
+            Zip code:695005
+
+            Country calling code:+91
+
+            Country: INDIA</p>
+
+    </div>
+    <div class="two">
+        <h1>Email Id</h1>
+        <p>idros@gmail.com</p>
+        <p>Phone number: 9895300546</p>
+    </div>
+
+    <div class="three">
+        <h1>Opening</h1>
+        <p>Monday,Tuesday,Wednesday</p>
+        <p>Thursday,Friday,Saturday</p>
+
+
+    </div>
+
+</div>
+
+
+
+
+    <p>&copy; 2024 IDROS Food Delivery Service. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

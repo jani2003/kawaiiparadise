@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url("static/skybg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Times new roman;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color:#d7bde2;
+            padding: 10px;
+            color: white;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            background-color:#c39bd3;
+            padding:20px;
+            color:black;
+        }
+        .logo .icon {
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav li {
+            margin: 35px 50px;
+            font-size:30px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: black;
+        }
+        .card-registration {
+            background-color: rgba(255, 255, 255, 0); /* Set background to white */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-outline input {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .btn-primary {
+           color:violet;
+            background-color:purple;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color:#d7bde2;
+        }
+        footer {
+            background-color:#d7bde2;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 100px;
+            font-size: 20px;
+        }
+
+        .m1{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            padding: 10px;
+        }
+        .m4{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span class="icon">✨🧸</span>
+            <span class="f1">KAWAII PARADISE</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="back">Home</a></li>
+                <li><a href="ga">Menu</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="staff">Our staff</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="vh-1" style="background-color: rgba(243, 243, 243, 0);">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-6">
+                    <div class="card shadow-2-strong card-registration">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="m1">Customer Registration</h3>
+                            <form action="" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" class="form-control form-control-lg" name="name1" placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" class="form-control form-control-lg" name="name2" placeholder="Last Name"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" class="form-control form-control-lg" name="name3" placeholder="Place"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="number" class="form-control form-control-lg" name="name4" placeholder="Mobile"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="email" class="form-control form-control-lg" name="name5" placeholder="Email"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" class="form-control form-control-lg" name="name6" placeholder="Username"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="password" class="form-control form-control-lg" name="name7" placeholder="Password"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Register"/>
+                                </div>
+                                <div class="m4">
+                                    <p>Already have an account? <a href="path1" class="link-info">Sign in here</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 The Kawaii Paradise. All rights reserved.</p>
+    </footer>
+</body>
+</html>

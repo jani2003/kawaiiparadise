@@ -1,0 +1,167 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+             footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #033d0d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+        /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: green;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+}
+
+form .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: red;
+}
+
+/* Success Messages */
+.alert {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: black;
+    border: 1px solid #c3e6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}
+
+
+nav{
+    background-color: #033d0d;
+   }
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+padding: 0;
+}
+
+nav li {
+margin: 35px 50px;
+padding: 5px;
+}
+
+nav a {
+text-decoration: none;
+color: rgb(197, 219, 168);
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+nav a:hover {
+color: #c9580c;
+}
+ </style>
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<nav>
+    <ul>
+
+        <li><a href="http://127.0.0.1:8000/back">Home</a></li>
+        <li><a href="http://127.0.0.1:8000/ga">Menu</a></li>
+          <li><a href="http://127.0.0.1:8000/path1">Aboutus</a></li>
+        <li><a href="http://127.0.0.1:8000/staff">Ourstaff</a></li>
+        <li><a href="http://127.0.0.1:8000/log">My account</a></li>
+    </ul>
+  </nav>
+
+ <!--Contact Us-->
+
+    <div class="container mt-5">
+        <h1>Contact Us</h1>
+        <form method="post" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        {% for message in messages %}
+            <div class="alert alert-success mt-3">{{ message }}</div>
+        {% endfor %}
+    </div>
+
+
+<footer>
+    <p>&copy; 2024 IDROS Food Delivery Service. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

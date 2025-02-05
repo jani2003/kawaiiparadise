@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Buttons</title>
+<style>
+    body {
+  font-family: times new roman;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:#ebdef0;
+}
+
+.container {
+  Margin-top:40px;
+  Margin-bottom:90px;
+  text-align: center;
+  font-size:50px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size:60px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.start-shopping {
+  background-color: #c39bd3;
+}
+
+.start-shopping:hover {
+  background-color:pink;
+  color:purple;
+}
+
+.wishlist {
+  background-color: #007bff; /* Blue */
+}
+
+.wishlist:hover {
+  background-color: #0056b3;
+}
+li{
+  border:1px solid blue;
+  display:block;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome To Kawaii Paradise</h1>
+    <div class="buttons">
+      <a href="path13" class="button start-shopping">Start Shopping</a>
+      <a href="path12" class="button wishlist">Wishlist</a>
+    </div>
+  </div>
+<br>
+<br>
+<li><a href="lgout" >Log Out</a></li>
+</body>
+</html>
