@@ -221,6 +221,89 @@ nav li a:hover {
     background-color:#ebdef0;
     padding:10px;
     }
+ .banner-section {
+        position: relative;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .shop-banner {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .banner-text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .banner-text-overlay h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .banner-text-overlay p {
+        font-size: 1.2rem;
+        margin: 10px 0 0;
+    }
+   .row2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column2{
+    flex: 1 1 300px;
+    padding: 14px;
+}
+
+.card2 {
+    background-color:#e8daef;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    width:99%;
+    height:90%;
+}
+
+.art2 {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.art2:hover {
+    transform: scale(1.1);
+    transition: 0.15s ease-in-out;
+}
+
+.container2 {
+    padding: 40px;
+    color: #16a085;
+    font-size: 14px;
+    margin-top:5px;
+}
+
+.container2 h2 {
+    font-size: 24px;
+}
+.pro{
+    margin-left:500px;
+    padding: 10px 20px;
+    background-color: #d7bde2;
+    border: 1px solid black;
+    }
 </style>
 </head>
 <body>
@@ -248,7 +331,7 @@ nav li a:hover {
                 <div class="container">
                     <h2>Kawaii Notebook</h2>
                     <p>Perfect kawaii journal notebooks for school girls. Suitable for note-taking, journaling, and learning. Nice back-to-school gifts.</p>
-                    <button ><a href="path13">Shop Now</a></button>
+                    <button ><a href="userwelcome">Shop Now</a></button>
 
                 </div>
 
@@ -260,7 +343,7 @@ nav li a:hover {
                 <div class="container">
                     <h2>Cute Decors</h2>
                     <p>Pounce on your tasks with our adorable Stationery Set! Perfect for students and office workers looking to add a dash of whimsy to their desk.</p>
-                    <button ><a href="path13">Shop Now</a></button>
+                    <button ><a href="userwelcome">Shop Now</a></button>
                 </div>
             </div>
         </div>
@@ -270,7 +353,7 @@ nav li a:hover {
                 <div class="container">
                     <h2>Plush Toy Dolls</h2>
                     <p>Discover our collection of adorable plush toys: soft, huggable, and perfect for adding charm to your space or gifting to someone special.</p>
-                    <button ><a href="path13">Shop Now</a></button>
+                    <button ><a href="userwelcome">Shop Now</a></button>
                 </div>
             </div>
         </div>
@@ -280,7 +363,7 @@ nav li a:hover {
                 <div class="container">
                     <h2>Stationery</h2>
                     <p>Supplies Set with Notebook, Pencil Pouch, Click Pens, and Cartoon Stickers.</p>
-                    <button ><a href="path13">Shop Now</a></button>
+                    <button ><a href="userwelcome">Shop Now</a></button>
                 </div>
             </div>
         </div>
@@ -290,7 +373,7 @@ nav li a:hover {
                 <div class="container">
                     <h2>Art and Craft Supplies</h2>
                     <p>Unleash your creativity with our delightful art and craft supplies – perfect for crafters!</p>
-                    <button ><a href="path13">Shop Now</a></button>
+                    <button ><a href="userwelcome">Shop Now</a></button>
                 </div>
             </div>
         </div>
@@ -300,7 +383,7 @@ nav li a:hover {
                 <div class="container">
                     <h2>Bags and Pouches</h2>
                     <p>Carry your essentials in style with our charming collection of bags and pouches!</p>
-                    <button ><a href="path13">Shop Now</a></button>
+                    <button ><a href="userwelcome">Shop Now</a></button>
                 </div>
             </div>
         </div>
@@ -308,7 +391,55 @@ nav li a:hover {
 <br>
 <br>
 <br>
+<div class="banner-section">
+    <img src="static/secondb.avif" alt="Kawaii Shop Banner" class="shop-banner">
+    <div class="banner-text-overlay">
+        <h2>Welcome to the World of Kawaii Wonders! 🌸</h2>
+        <p>Discover the cutest and trendiest treasures to brighten your day.</p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!-- Sentence about the Kawaii Shop -->
+<p style="text-align: center; font-size: 1.5rem; color: #430f5a; margin: 20px;">
+    Visit our Kawaii Shop for endless charm and delightful surprises! 🌟
+</p>
+<br>
+<div class="row2">
+    <div class="column2">
+        <div class="card2">
+            <img class="art2" src="static/plush.jpg" alt="Roses">
+            <div class="container2">
+                <h2 style="color:Purple">Plushies</h2>
+                <p style="color:Purple"><b style="color:Purple ;font-size:20px ">₹1500<br></b><br>Crafted from ultra-soft plush material, it offers a <br>cosy and huggable experience for kids and adults alike.</p>
+            </div>
 
+        </div>
+    </div>
+    <div class="column2">
+        <div class="card2">
+            <img class="art2" src="static/pens.jpg" alt="Cherry">
+            <div class="container2">
+                <h2 style="color:Purple">Cute Pens</h2>
+                <p style="color:Purple"><b style="color:Purple ;font-size:20px ">₹550<br></b><br>Ideal for office work, school assignments, journaling, scrapbooking, and more, <br>these pens are versatile companions for any task.</p>
+            </div>
+        </div>
+    </div>
+    <div class="column2">
+        <div class="card2">
+            <img class="art2" src="static/note.jpg" alt="Tulip">
+            <div class="container2">
+                <h2  style="color:Purple ; font-size:20px">Sticky Notes Set</h2>
+                <p style="color:Purple" ><b style="color:Purple ;font-size:20px ">₹250<br></b><br> Experience the premium quality of our sticky notes and tabs, crafted <br>from durable and high-quality paper.<br></p>
+            </div>
+        </div>
+    </div>
+</div>
+<button  class="pro"><b><a style="color:Purple ; padding:30px" href="path1">Shop More</a></b></button>
+<br>
+<br>
+<h3 style="color:purple; text-align:center">"We offer an exclusive selection of high-quality, premium items across all categories. More than just a gifting platform,<br> we aim to be your trusted destination for finding exceptional gifts for your loved ones and indulgences for yourself.<br><b> Sign in, explore, and discover all that we have to offer."</b></h3>
 <footer>
         <div class="about-container">
 
@@ -342,7 +473,6 @@ nav li a:hover {
                 </div>
             </div>
         </div>
-
 
 
         <div class="footer-bottom">

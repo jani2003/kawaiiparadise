@@ -12,7 +12,12 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color:#ebdef0;
+  background-image:url("static/secondb.avif");
+  background-repeat:no-repeat;
+  background-size:1000px 900px;
+  background-attachment:fixed;
+  background-size:cover;
+
 }
 
 .container {
@@ -45,6 +50,7 @@ h1 {
 
 .start-shopping {
   background-color: #c39bd3;
+
 }
 
 .start-shopping:hover {
@@ -63,18 +69,104 @@ li{
   border:1px solid blue;
   display:block;
   }
+.banner-section {
+        position: relative;
+        margin: 30px 0;
+        text-align: center;
+
+    }
+
+    .shop-banner {
+        width: auto;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .banner-text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .banner-text-overlay h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .banner-text-overlay p {
+        font-size: 1.2rem;
+        margin: 10px 0 0;
+    }
+  .full-banner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .full-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 10px;
+        width:60%;
+    }
+
+    .overlay h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
 </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome To Kawaii Paradise</h1>
+    <br><br>
+<!-- New Banner Section -->
+<div class="banner-section">
+    <div class="full-banner">
+    <div class="overlay">
+        <h2>Welcome to the World of Kawaii Wonders! 🌸</h2>
+        <p>Discover the cutest and trendiest treasures to brighten your day.</p>
+    </div>
+    </div>
+</div>
+
+<!-- Sentence about the Kawaii Shop -->
+<p style="text-align: center; font-size: 1.5rem; color: #430f5a; margin: 20px;background-color:white">
+    Visit our Kawaii Shop for endless charm and delightful surprises! 🌟
+</p>
+
     <div class="buttons">
-      <a href="path13" class="button start-shopping">Start Shopping</a>
-      <a href="path12" class="button wishlist">Wishlist</a>
+      <a href="path13" class="button start-shopping"><b>Start Shopping</b></a>
+      <a href="path12" class="button wishlist"><b>Wishlist</b></a>
     </div>
   </div>
 <br>
 <br>
-<li><a href="lgout" >Log Out</a></li>
+<li><b><a  href="lgout" style="color:black; font-size:20px; background-color:white" >Log Out</a></b></li>
 </body>
 </html>

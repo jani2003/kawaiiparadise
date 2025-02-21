@@ -223,3 +223,6 @@ def lgout(request):
 
 def cnt(request):
     return render(request,"kcontact.html")
+
+def userwelcome(request):
+    return render(request,"userwelcome.html")

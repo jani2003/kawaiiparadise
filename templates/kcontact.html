@@ -3,181 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Kawaii Candy Shop</title>
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #d4e6f1;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-header {
-    background-color:pink;
-    padding: 20px;
-    text-align: center;
-}
-
-header .logo img {
-    width: 100px;
-    height: auto;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a.active {
-    border-bottom: 2px solid white;
-}
-nav li a:hover {
-    color: black;
-}
-
-
-.contact {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.contact h1 {
-    font-size: 2.5em;
-    color: #ff66b2;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.contact-details {
-    width: 40%;
-    text-align: left;
-    font-size: 1.2em;
-}
-
-.contact-details p {
-    margin-bottom: 15px;
-}
-
-.contact-form {
-    width: 40%;
-}
-
-.contact-form h2 {
-    font-size: 1.8em;
-    color: #ff66b2;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid #ff7f7f;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.contact-form button {
-    background-color: #ff7f7f;
-    color: white;
-    padding: 8px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: lightblue;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: pink;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-</style>
+    <title>Contact Us | Kawaii Paradise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("static/skybg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: times new roman;
+            height: 100vh;
+            color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="kwlogo.png" alt="Kawaii Paradise Shop Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="(new)kawai.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contactkawai.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="contact">
+    <div class="contact-container">
         <h1>Contact Us</h1>
-        <div class="contact-info">
-            <div class="contact-details">
-                <h2>Get In Touch</h2>
-                <p>If you have any questions, feel free to reach out to us!</p>
-                <p><strong>Email:</strong> support@kawaiiparadiseshop.com</p>
-                <p><strong>Phone:</strong> +123 456 7890</p>
-                <p><strong>Address:</strong> 123 Kawaii Lane, Sweetville, Adoreland</p>
-            </div>
-
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form action="#" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Kawaii Paradise Shop. All rights reserved.</p>
-    </footer>
+        <p>We're here to help! Feel free to reach out to us.</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@kawaiiparadise.com">contact@kawaiiparadise.com</a></p>
+        <p><strong>Phone:</strong> +1-234-567-8901</p>
+    </div>
 </body>
 </html>

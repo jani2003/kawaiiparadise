@@ -26,4 +26,5 @@ urlpatterns=[path("",views.home,name="home"),
              path("path23",views.userpaymentsuccess,name="userpaymentsuccess"),
              path("path24/<str:id>",views.data,name="data"),
              path("cnt",views.cnt,name="cnt"),
-             path("lgout",views.lgout,name="lgout")]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+             path("lgout",views.lgout,name="lgout"),
+             path("userwelcome",views.userwelcome,name="userwelcome")]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
